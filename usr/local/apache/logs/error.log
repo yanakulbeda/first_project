@@ -5,3 +5,21 @@
 [Tue Dec 20 18:14:44 2016] [notice] Parent: Created child process 4848
 [Tue Dec 20 18:14:44 2016] [notice] Disabled use of AcceptEx() WinSock2 API
 [Tue Dec 20 18:14:44 2016] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Tue Dec 20 18:14:45 2016] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Tue Dec 20 18:14:45 2016] [notice] Child 4848: Child process is running
+[Tue Dec 20 18:14:45 2016] [notice] Child 4848: Acquired the start mutex.
+[Tue Dec 20 18:14:45 2016] [notice] Child 4848: Starting 25 worker threads.
+[Tue Dec 20 18:14:45 2016] [notice] Child 4848: Listening on port 443.
+[Tue Dec 20 18:14:45 2016] [notice] Child 4848: Listening on port 8648.
+[Tue Dec 20 18:14:45 2016] [notice] Child 4848: Listening on port 443.
+[Tue Dec 20 18:14:45 2016] [notice] Child 4848: Listening on port 80.
+[Tue Dec 20 18:14:46 2016] [error] [client 127.0.0.1] File does not exist: Z:/home/spoof.ru/www/favicon.ico, referer: http://spoof.ru/
+[Tue Dec 20 18:58:22 2016] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '/' in Z:\\home\\spoof.ru\\www\\form.php on line 13, referer: http://spoof.ru/Services.html
+[Tue Dec 20 18:59:38 2016] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '/' in Z:\\home\\spoof.ru\\www\\form.php on line 13, referer: http://spoof.ru/Services.html
+[Tue Dec 20 19:05:05 2016] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_ELSE in Z:\\home\\spoof.ru\\www\\form.php on line 34, referer: http://spoof.ru/Services.html
+[Tue Dec 20 19:07:08 2016] [error] [client 127.0.0.1] PHP Warning:  preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Unknown modifier '4' in Z:\\home\\spoof.ru\\www\\form.php on line 13, referer: http://spoof.ru/Services.html
+[Tue Dec 20 19:08:01 2016] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '/' in Z:\\home\\spoof.ru\\www\\form.php on line 13, referer: http://spoof.ru/Services.html
+[Tue Dec 20 19:14:25 2016] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_BOOLEAN_AND, expecting ')' in Z:\\home\\spoof.ru\\www\\form.php on line 11, referer: http://spoof.ru/Services.html
+[Tue Dec 20 19:15:33 2016] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '&', expecting ')' in Z:\\home\\spoof.ru\\www\\form.php on line 11, referer: http://spoof.ru/Services.html
+[Tue Dec 20 19:16:00 2016] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_BOOLEAN_AND, expecting ')' in Z:\\home\\spoof.ru\\www\\form.php on line 11, referer: http://spoof.ru/Services.html
+[Tue Dec 20 19:16:10 2016] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_BOOLEAN_AND, expecting ')' in Z:\\home\\spoof.ru\\www\\form.php on line 11, referer: http://spoof.ru/Services.html

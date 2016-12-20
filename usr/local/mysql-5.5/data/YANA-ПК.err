@@ -486,3 +486,6 @@ InnoDB: buffer...
 161220 18:14:31 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
 161220 18:14:31 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
 161220 18:14:31 [Note] Server socket created on IP: '127.0.0.1'.
+161220 18:14:33 [Note] Event Scheduler: Loaded 0 events
+161220 18:14:33 [Note] \usr\local\mysql-5.5\bin\mysqld.exe: ready for connections.
+Version: '5.5.25'  socket: ''  port: 3306  MySQL Community Server (GPL)
