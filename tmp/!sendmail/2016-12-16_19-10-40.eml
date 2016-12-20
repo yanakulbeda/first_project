@@ -1,0 +1,8 @@
+X-Sendmail-Cmdline: sendmail.pl -t -i
+To: yana.kulbeda@gmail.com
+Subject: Проверка почты
+X-PHP-Originating-Script: 0:form.php
+Content-type: text/html; charset=UTF-8 
+From: <yana.kulbeda@gmail.com>
+
+Имя: yana; Телефон: 1233456;

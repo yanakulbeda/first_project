@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SPOOF-English Language School-Contacts</title>
+<link rel='stylesheet' href='bootstrap.min.css' type='text/css' media='all'>
+<link href="bootstrp.css" rel="stylesheet">
+<link href="css/smoothDivScroll.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper container">
+		<header >
+			<img  src="logo1.jpg">
+		</header>
+		
+		<nav class="navbar navbar-default navbar-static navbar ">
+		
+			<ul class="nav navbar-nav">
+				<li><a href="proba.html">Main</a></li>
+				<li><a href="/yslugi/">Services</a></li>
+				<li><a href="galery.html"><b>Galery</b></a></li>
+				<li><a href="Contacts.html">Contacts</a></li>
+			</ul>
+	
+</nav>
+
+<div class="slider">
+  <div class="slide-list">
+    <div class="slide-wrap">
+	
+	  ... тут будут слайды в контейнере slide-item
+      <div class="slide-item">
+        <img src="img/img-1.jpg" alt="" />
+        <span class="slide-title">Первый слайд</span>
+      </div>
+		  <div class="slide-item">
+        <img src="img/img-2.jpg" alt="" />
+        <span class="slide-title">Второй слайд</span>
+      </div>
+	    <div class="slide-item">
+        <img src="img/img-3.jpg" alt="" />
+        <span class="slide-title">Третий слайд</span>
+      </div>
+	    <div class="slide-item">
+        <img src="img/img-4.jpg" alt="" />
+        <span class="slide-title">Четвертый слайд</span>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div name="prev" class="navy prev-slide"></div>
+  <div name="next" class="navy next-slide"></div>
+  <div class="auto play"></div>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+ function htmSlider(){
+  /* Зададим следующие параметры */
+  /* обертка слайдера */
+  var slideWrap = jQuery('.slide-wrap');
+  /* кнопки вперед/назад и старт/пауза */
+  var nextLink = jQuery('.next-slide');
+  var prevLink = jQuery('.prev-slide');
+  var playLink = jQuery('.auto');
+  /* Проверка на анимацию */
+  var is_animate = false;
+  /* ширина слайда с отступами */
+  var slideWidth = jQuery('.slide-item').outerWidth();
+  /* смещение слайдера */
+  var scrollSlider = slideWrap.position().left - slideWidth;
+		
+  /* Клик по ссылке на следующий слайд */
+  nextLink.click(function(){
+   if(!slideWrap.is(':animated')) {
+    slideWrap.animate({left: scrollSlider}, 500, function(){
+     slideWrap
+      .find('.slide-item:first')
+      .appendTo(slideWrap)
+      .parent()
+      .css({'left': 0});
+    });
+   }
+  });
+
+  /* Клик по ссылке на предыдующий слайд */
+  prevLink.click(function(){
+   if(!slideWrap.is(':animated')) {
+    slideWrap
+     .css({'left': scrollSlider})
+     .find('.slide-item:last')
+     .prependTo(slideWrap)
+     .parent()
+     .animate({left: 0}, 500);
+   }
+  });
+		
+  /* Функция автоматической прокрутки слайдера */
+  function autoplay(){
+   if(!is_animate){
+    is_animate = true;
+    slideWrap.animate({left: scrollSlider}, 500, function(){
+     slideWrap
+      .find('.slide-item:first')
+      .appendTo(slideWrap)
+      .parent()
+      .css({'left': 0});
+     is_animate = false;
+    });
+   }
+  }
+		
+  /* Клики по ссылкам старт/пауза */
+  playLink.click(function(){
+   if(playLink.hasClass('play')){
+    /* Изменяем клас у кнопки на клас паузы */
+	playLink.removeClass('play').addClass('pause');
+    /* Добавляем кнопкам вперед/назад клас который их скрывает */
+    jQuery('.navy').addClass('disable');
+    /* Инициализируем функцию autoplay() через переменную
+       чтобы потом можно было ее отключить
+	*/
+    timer = setInterval(autoplay, 1000);
+   } else {
+    playLink.removeClass('pause').addClass('play');
+	/* показываем кнопки вперед/назад */
+    jQuery('.navy').removeClass('disable');
+    /* Отключаем функцию autoplay() */
+    clearInterval(timer);
+   }
+  });
+
+ }
+ 
+ /* иницилизируем функцию слайдера */
+ htmSlider();
+});
+</script>
+
+
+	</body>
+
+
+</html>

@@ -1,0 +1,7 @@
+[Tue Dec 20 18:14:35 2016] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Tue Dec 20 18:14:36 2016] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Tue Dec 20 18:14:44 2016] [notice] Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/1.0.1c PHP/5.3.13 configured -- resuming normal operations
+[Tue Dec 20 18:14:44 2016] [notice] Server built: Apr 20 2012 18:42:30
+[Tue Dec 20 18:14:44 2016] [notice] Parent: Created child process 4848
+[Tue Dec 20 18:14:44 2016] [notice] Disabled use of AcceptEx() WinSock2 API
+[Tue Dec 20 18:14:44 2016] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)

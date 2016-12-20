@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SPOOF-English Language School-Contacts</title>
+<link rel='stylesheet' href='bootstrap.min.css' type='text/css' media='all'>
+<link href="bootstrp.css" rel="stylesheet">
+<link href="css.css" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper container">
+		<header >
+			<img  src="logo1.jpg">
+		</header>
+		
+		
+			<nav class="navbar navbar-default navbar-static navbar ">
+		
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Main</a></li>
+				<li><a href="Services.html">Services</a></li>
+				<li><a href="Programms.html">Programms</a></li>
+				<li><a href="Contacts.html"><b>Contacts</b></a></li>
+			</ul>
+	
+</nav>
+	
+
+	<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $('td a').click(function () {
+
+        var o=$(this).parent();
+
+        var url=o.find('img').attr('src');
+
+        var html='<a href="#" class="clone"><img src="'+url+'" /></a>'
+
+        o.append(html);
+
+        o=o.find('.clone');
+
+        o.animate({width:'150%',height:'150%'});
+
+        o.click(function () {
+
+            $(this).remove();
+
+        });
+
+    });
+
+});
+
+</script>
+<table>
+
+    <td>
+
+        <a href='#'><img src='map1.png' /></a>
+
+    </td>
+
+</table>
+
+	
+	<div >
+		<p> <br> <b>+375297778899 (velcom) <br><br>  +375337778899 (mts) <br><br>  +375257778899 (life)</p>
+		<br>  <p> <b>Lienina Street, 22 </b></p>
+	</div>
+
+<footer>
+	<div class="container">		
+	<p>
+		Copyright © 2016 SPOOF English School. 
+	</p>
+</div>
+	
+</footer>
+
+	</body>
+
+
+</html>

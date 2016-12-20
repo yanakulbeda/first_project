@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SPOOF-English Language School-Contacts</title>
+<link rel='stylesheet' href='bootstrap.min.css' type='text/css' media='all'>
+<link href="bootstrp.css" rel="stylesheet">
+<link href="css.css" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>
+function AjaxFormRequest(result_id,formMain,url) {
+   jQuery.ajax({
+      url:     url,
+      type:     "POST",
+      dataType: "html",
+      data: jQuery("#"+formMain).serialize(),
+      success: function(response) {
+         document.getElementById(result_id).innerHTML = response;
+      },
+      error: function(response) {
+         document.getElementById(result_id).innerHTML = "Возникла ошибка при отправке формы. Попробуйте еще раз";
+      }
+   });
+  //удаляем поля после воода: 
+   $(':input','#formMain')
+ .not(':button, :submit, :reset, :hidden')
+ .val('')
+ .removeAttr('checked')
+ .removeAttr('selected');
+ }
+
+</script>
+
+</head>
+
+<body>
+<div class="wrapper container">
+<div class="content">
+		<header >
+			<img  src="logo1.jpg">
+		</header>
+		
+		
+			<nav class="navbar navbar-default navbar-static navbar ">
+		
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Main</a></li>
+				<li><a href="Services.html"><b>Services</b></a></li>
+				<li><a href="Programms.html">Programms</a></li>
+				<li><a href="Contacts.html">Contacts</a></li>
+			</ul>
+	
+</nav>
+	
+<div>
+<div class="wrapper">
+<div>
+<p>Gift Certificate
+
+A perfect gift for friends and loved ones - the study of the English language by international standards, otSpoof Inglish School. Such a gift has no age restrictions. In addition, you can learn English online, without leaving home.
+
+If you have any questions about this certificate, please contact our consultants</p>
+<img  src="gift.jpg">
+</div>
+ <div class="form">
+  <div id="messegeResult">Leave your contacts and our consultant will contact you </div>
+  <form method="post" action="" id="formMain">
+        <input id="name" type="text" name="name" placeholder="Enter your name" maxlength="30" autocomplete="off" />
+        <input id="telephone" type="Tel" name="telephone" placeholder="Enter your phone" maxlength="30" autocomplete="off"/>
+        <input id="button" type="button" value="Call back" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
+  </form>
+  </div>
+  
+ <div>
+ <br> 
+ <p>SPOOF Club - a unique project for the students of our school. In the classroom, students of the club to easily step over the language barrier and 
+ communicate with ease in a friendly environment. In the classroom you hook the acquired knowledge in a real conversation with a native speaker. 
+ Also, there is a possibility of repetition / learning grammar, thematic clubs grammar. If you are interested in learning a language in an interactive way, 
+ using a variety of games and simulation of situations, then you will approach Games Clubs.</p>
+ <img src="club.jpg" >
+</div> 
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+	<div class="container">		
+	<p>
+		Copyright © 2016 SPOOF English School. 
+	</p>
+</div>
+	
+</footer>
+
+	</body>
+
+
+</html>
